@@ -4,38 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(back.jpg);
+    background-size: cover;
+    color: #c9bebe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #D5CEA3;
+}
+
+.about-section {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Team Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.profile-card {
+    background-color: rgba(61, 24, 24, 0.4);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 5px solid #811515;
+}
+
+.profile-card h2 {
+    font-size: 1.5rem;
+    color: #d4c2c2;
+    margin-bottom: 10px;
+}
+
+.profile-card h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #cfbeb5;
+    margin-bottom: 15px;
+}
+
+.profile-card p {
+    font-size: 13px;
+    color: #cac0c0;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .team-grid {
+        gap: 20px;
+    }
+    .profile-card {
+        padding: 20px;
+    }
+    .profile-card h2 {
+        font-size: 1.3rem;
+    }
+    .profile-card h3 {
+        font-size: 1rem;
+    }
+}
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Include navigation -->
-    <header>
-        <nav>
-            <div class="logo">QUASAR</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="planets.html">Planets</a></li>
-                <li><a href="game.html">Game</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-            
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+    <section class="about-section">
+        <div class="container">
+            <h1>Our Team</h1>
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="./Swapna1.jpeg" alt="John Doe">
+                    </div>
+                    <h2>Swapna Mercy John</h2>
+                    <h3> Python Enthuasists
+                        </h3>
+                    <p>I am a passionate Python enthusiast with a strong interest in building efficient and scalable solutions.  My goal is to continuously learn and improve my skills in  Python  technologies. </p>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="./jerin.jpeg" alt="Jane Smith">
+                    </div>
+                    <h2>Jerin Raj</h2>
+                    <h3>Flutter Enthuasists </h3>
+                    <p>I am a passionate Flutter developer, building cross-platform mobile applications with sleek user interfaces and efficient performance.</p>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="./alvin.jpeg" alt="Mark Lee">
+                    </div>
+                    <h2>Alvin Thankachan</h2>
+                    <h3>Full Stack Developer</h3>
+                    <p>I'm a full stack developer skilled in building responsive web applications, handling both front-end and back-end tasks efficiently.</p>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="./malavika.jpeg" alt="Emily Clark">
+                    </div>
+                    <h2>Malavika M S</h2>
+                    <h3>RPA Developer
+                        
+                    </h3>
+                    <p>As an RPA developer, I specialize in automating business processes to enhance efficiency and streamline operations using robotic process automation technologies.</p>
+                </div>
+                <!-- Team Member 5 -->
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="./hari.jpeg" alt="Michael Brown">
+                    </div>
+                    <h2>Hari Krishnan R</h2>
+                    <h3>Data Analyst</h3>
+                    <p>As a data analyst, I leverage data-driven insights to inform business decisions, streamline processes, and enhance overall performance.</p>
+                </div>
+                <!-- Team Member 6 -->
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="./roshen.jpg" alt="Sarah Johnson">
+                    </div>
+                    <h2>Roshen Geo Philip</h2>
+                    <h3>AI / ML <br>
+                    Full Stack Developer</h3>
+                    <p>As an AI/ML developer, I specialize in designing and implementing intelligent algorithms and models that harness the power of data to drive innovative solutions and enhance decision-making processes.</p>
+                </div>
             </div>
-        </nav>
-    </header>
-    
-
-    <h1>About Our Team</h1>
-    <p>Meet the team behind this solar system exploration project.</p>
-
-    <div class="team-member">
-        <h2>Member 1</h2>
-        <p>Role: Developer</p>
-        <p>Skills: JavaScript, 3D Graphics</p>
-    </div>
-
-    <!-- Add more team members here -->
+        </div>
+    </section>
 </body>
 </html>
