@@ -4,7 +4,7 @@ function addOrrery() {
 }
 
 // Fetch comet data from NASA's API
-async function fetchCometData() {
+async function fetchNASAData() {
     const response = await fetch('https://data.nasa.gov/resource/b67r-rgxc.json');
     const data = await response.json();
     populateCometTable(data);
@@ -25,4 +25,4 @@ function populateCometTable(comets) {
 }
 
 addOrrery();  // Add the solar system orrery
-fetchCometData();  // Fetch and populate comet data
+fetchNASAData();  // Fetch and populate comet data
