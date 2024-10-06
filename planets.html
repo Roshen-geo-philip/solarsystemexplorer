@@ -9,16 +9,24 @@
   <title>Document</title>
 </head>
 <body>
-  <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="planets.html">Planets</a></li>
-        <li><a href="game.html">Game</a></li>
-        <li><a href="about.html">About</a></li>
-    </ul>
-</nav>
- 
-  <input class='planet9' id='pluto' type='radio' name='planet'>
+  <header>
+    <nav>
+        <div class="logo">QUASAR</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="planets.html">Planets</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+  </header>
+  <!-- <input class='planet9' id='pluto' type='radio' name='planet'>
   <label class='menu pluto' for='pluto'>
     <div class='preview'></div>
     <div class='info'>
@@ -28,7 +36,7 @@
       </h2>
       <h3>39.5 AU</h3>
     </div>
-  </label>
+  </label> -->
   <input class='planet8' id='neptune' type='radio' name='planet'>
   <label class='menu neptune' for='neptune'>
     <div class='preview'></div>
@@ -117,6 +125,7 @@
       <h3>0.39 AU</h3>
     </div>
   </label>
+  
   <div class='solar'>
     <div class='solar_systm'>
       <div class='mercury planet'>
