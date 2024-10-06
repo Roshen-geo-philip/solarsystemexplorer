@@ -32,6 +32,7 @@ Jamie Coulter
    margin: auto;
  }
  
+ 
  body .solar_systm .planet.neptune .trajectory.ner, body .solar_systm .planet.neptune .trajectory.pro, body .solar_systm .planet.neptune .trajectory.tri, body .solar_systm .planet.uranus .trajectory.umb, body .solar_systm .planet.uranus .trajectory.ari, body .solar_systm .planet.uranus .trajectory.mir, body .solar_systm .planet.saturn .trajectory.enc, body .solar_systm .planet.saturn .trajectory.di, body .solar_systm .planet.saturn .trajectory.ti, body .solar_systm .planet.jupiter .trajectory.ga, body .solar_systm .planet.jupiter .trajectory.eu, body .solar_systm .planet.jupiter .trajectory.lop, body .solar_systm .planet.mars .trajectory.p, body .solar_systm .planet.mars .trajectory.d, body .solar_systm .planet.earth .trajectory.m {
    border: 2px dashed white;
    position: absolute;
@@ -111,22 +112,24 @@ Jamie Coulter
  
  body {
    overflow: hidden;
-   background: black;
+   background: rgb(2, 2, 2);
    height: 100vh;
    font-family: "Montserrat", sans-serif;
  }
  body .logo {
    color: white;
    position: absolute;
-   top: 40px;
-   left: 0;
-   right: 0;
+   top: 30px;
+   left: auto;
+   right: 50px;
    margin: auto;
-   text-align: center;
+   text-align: right;
    font-size: 14px;
    text-transform: uppercase;
    font-weight: 100;
    letter-spacing: 4px;
+   font-size: 100%;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
  body .logo span {
    font-size: 12px;
@@ -2203,7 +2206,7 @@ Jamie Coulter
    top: 0;
    height: 100vh;
    transition: all 0.2s;
-   color: black;
+   color: rgb(10, 10, 10);
    background: white;
    padding: 10px 60px 0px 60px;
    overflow: scroll;
@@ -2260,7 +2263,7 @@ Jamie Coulter
  body .panel h2::after {
    width: 30px;
    height: 2px;
-   background: black;
+   background: rgb(21, 21, 21);
    display: block;
    content: "";
    margin-top: 8px;
@@ -2324,3 +2327,124 @@ Jamie Coulter
   width: 80%;
   height: auto;
 }
+
+header, footer {
+  background-color: rgba(0, 0, 0, 0.2); 
+  color: #fff;
+  text-align: center;
+  padding:  0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+
+ }
+ 
+
+ .logo{
+  font-size: 300% ;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: inline-flex;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+  margin-top: 0rem;
+  
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.9rem 3rem;
+  text-align:right;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #121212;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.auth-buttons a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  background-color: #535455;
+  padding: 0rem 1rem;
+  border-radius: 5px;
+}
+
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px;
+}
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+  }
+
+  .burger {
+      display: flex;
+  }
+
+  .nav-links.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .nav-links li {
+      margin: 1rem 0;
+      text-align:center;
+  }
+
+  .content {
+      padding: 10px;
+  }
+
+  form {
+      width: 90%;
+  }
+}
+
+
