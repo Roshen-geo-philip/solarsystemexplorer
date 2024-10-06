@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Orrery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Include navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="planets.html">Planets</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div id="canvas-container"></div> <!-- Orrery will render here -->
+
+    <div id="comet-data">
+        <h2>Near-Earth Comets - Real-Time Data</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Object Number</th>
+                    <th>Distance from Earth</th>
+                    <th>Orbital Period</th>
+                </tr>
+            </thead>
+            <tbody id="comet-list">
+                <!-- Real-time data will populate here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
