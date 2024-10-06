@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Game</title>
+    <title>Memory Game - Asteroids, Comets, Planets</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Include navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="planets.html">Planets</a></li>
-            <li><a href="game.html">Game</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <div class="logo">QUASAR</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="planets.html">Planets</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+                
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <h1>Memory Game: Asteroids, Comets, and Planets</h1>
+    <p>Select matching pairs by clicking on two cards with the same object name.</p>
+    
+    <!-- Game container for the 4x4 matrix -->
+    <div id="game-board" class="grid-container">
+        <!-- Cards will be dynamically inserted here -->
+    </div>
 
-    <h1>Space Game - Coming Soon!</h1>
-    <p>This page will feature a space-themed game involving comets and planets. Stay tuned for updates!</p>
+    <!-- Load the game script -->
+    <script src="game.js"></script>
 </body>
 </html>
