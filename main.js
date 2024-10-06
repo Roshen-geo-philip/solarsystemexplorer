@@ -13,16 +13,16 @@ function addOrrery() {
 
     // Load textures for planets
     const textureLoader = new THREE.TextureLoader();
-    const sunTexture = textureLoader.load('textures/sun.jpg');
-    const mercuryTexture = textureLoader.load('textures/mercury.jpg');
-    const venusTexture = textureLoader.load('textures/venus.jpg');
-    const earthTexture = textureLoader.load('textures/earth.jpg');
-    const marsTexture = textureLoader.load('textures/mars.jpg');
-    const jupiterTexture = textureLoader.load('textures/jupiter.jpg');
-    const saturnTexture = textureLoader.load('textures/saturn.jpg');
-    const uranusTexture = textureLoader.load('textures/uranus.jpg');
-    const neptuneTexture = textureLoader.load('textures/neptune.jpg');
-    const asteroidTexture = textureLoader.load('textures/meteroids.jpg'); // Rocky texture for asteroids and meteoroids
+    const sunTexture = textureLoader.load('assets/sun.jpg');
+    const mercuryTexture = textureLoader.load('assets/mercury.jpg');
+    const venusTexture = textureLoader.load('assets/venus.jpg');
+    const earthTexture = textureLoader.load('assets/earth.jpg');
+    const marsTexture = textureLoader.load('assets/mars.jpg');
+    const jupiterTexture = textureLoader.load('assets/jupiter.jpg');
+    const saturnTexture = textureLoader.load('assets/saturn.jpg');
+    const uranusTexture = textureLoader.load('assets/uranus.jpg');
+    const neptuneTexture = textureLoader.load('assets/neptune.jpg');
+    const asteroidTexture = textureLoader.load('assets/meteroids.jpg'); // Rocky texture for asteroids and meteoroids
 
     // Sun
     const sunGeometry = new THREE.SphereGeometry(5, 32, 32);
